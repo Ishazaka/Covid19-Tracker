@@ -1,38 +1,149 @@
-.App {
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+/* //////////// NAVBAR ////////////////////////*/
+
+.menu1 {
+  padding: 20px 24px !important;
+  background: transparent !important;
+  color: black !important;
+  display: flex;
+}
+
+.navbar-brand {
+  font-size: 23px !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px !important;
+  color: Red !important;
+  /* border: 2px solid red; */
+}
+
+.mynav {
+  justify-content: end;
+}
+
+.mynav ul {
+  display: flex;
+}
+
+.mynav li {
+  list-style: none;
+}
+
+
+.mynav a {
+  margin-right: 20px !important;
+  font-size: 20px !important;
+  line-height: 2px !important;
+  color: black !important;
+  border: 2px solid transparent;
+  padding: 17px;
+  border-radius: 5px;
+}
+
+.mynav a:hover {
+  background: rgb(67, 85, 190);
+  color: aliceblue !important;
+}
+
+
+
+
+
+
+
+/* //////////// HEADER ////////////////////////*/
+.header {
+  background-image: url('./components/Assets/home-bg.jpg');
+  /* background-position: 100px 10px; */
+  /* background-position: center; */
+  background-position: right 35% bottom 25%;
+  height: 80vh;
+}
+
+.btn-primary {
+  /* background-color: burlywood !important; */
+  background-color: rgb(67, 85, 190);
+  padding: 15px;
+  font-size: 17px;
+  margin-top: 10px;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.heading-header {
   text-align: center;
+  padding-top: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading-header h1 {
+  font-size: 37px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: rgb(67, 85, 190);
+
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__dropdown {
+  background-color: white;
+}
+
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+
+.app__left {
+  flex: 0.9;
+}
+
+.app__stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__right {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app__right .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.app__graph {
+  flex-grow: 1;
+}
+
+.app__graphtitle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
 }

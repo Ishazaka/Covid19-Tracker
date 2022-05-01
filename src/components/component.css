@@ -1,0 +1,33 @@
+/* //////////// NAVBAR ////////////////////////*/
+
+.menu1 {
+    padding: 20px 24px !important;
+    background: transparent !important;
+    color: black !important;
+    display: flex;
+}
+
+.navbar-brand {
+    font-size: 23px !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px !important;
+    color: Red !important;
+    /* border: 2px solid red; */
+}
+
+
+.mynav a {
+    margin-right: 20px !important;
+    font-size: 20px !important;
+    line-height: 2px !important;
+    color: black !important;
+    border: 2px solid transparent;
+    padding: 17px;
+    border-radius: 5px;
+}
+
+.mynav a:hover {
+    background: greenyellow;
+
+}

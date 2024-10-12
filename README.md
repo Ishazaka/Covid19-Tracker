@@ -1,4 +1,4 @@
-https://covid-19tracker101.netlify.app/
+https://covid19effects.netlify.app/
 
 # Getting Started with Create React App
 
